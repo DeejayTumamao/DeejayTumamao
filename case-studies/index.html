@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,649 +9,572 @@
 
 <title>Case Studies | Deejay Tumamao</title>
 
-<meta name="description"
-content="Explore business systems, operations, automation, CRM, and transformation case studies by Deejay Tumamao.">
+<meta name="description" content="Explore business systems, operations, automation, CRM, and transformation case studies by Deejay Tumamao.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
---black:#0A0A0A;
---white:#F5F2EC;
---green:#1D9E75;
---green-dark:#085041;
---green-light:#E1F5EE;
---muted:#6B6B6B;
---border:rgba(10,10,10,.10);
+    --black:#0A0A0A;
+    --white:#F5F2EC;
+    --green:#1D9E75;
+    --green-dark:#085041;
+    --green-light:#E1F5EE;
+    --muted:#6B6B6B;
+    --border:rgba(10,10,10,.10);
 
---display:'Syne',sans-serif;
---body:'DM Sans',sans-serif;
+    --display:'Syne',sans-serif;
+    --body:'DM Sans',sans-serif;
 }
 
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:var(--body);
-background:var(--white);
-color:var(--black);
-line-height:1.6;
+    font-family:var(--body);
+    background:var(--white);
+    color:var(--black);
+    line-height:1.6;
 }
 
 a{
-color:inherit;
+    color:inherit;
 }
 
 nav{
-position:fixed;
-top:0;
-left:0;
-right:0;
-z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
 
-padding:20px 5vw;
+    padding:20px 5vw;
 
-display:flex;
-align-items:center;
-justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-background:rgba(245,242,236,.93);
-backdrop-filter:blur(12px);
+    background:rgba(245,242,236,.94);
+    backdrop-filter:blur(12px);
 
-border-bottom:1px solid var(--border);
+    border-bottom:1px solid var(--border);
 }
 
 .logo{
-font-family:var(--display);
-font-weight:800;
-font-size:18px;
-text-decoration:none;
+    font-family:var(--display);
+    font-weight:800;
+    font-size:18px;
+    text-decoration:none;
 }
 
 .logo span{
-color:var(--green);
+    color:var(--green);
 }
 
 .nav-links{
-display:flex;
-align-items:center;
-gap:28px;
+    display:flex;
+    align-items:center;
+    gap:28px;
 }
 
 .nav-links a{
-font-size:14px;
-color:var(--muted);
-text-decoration:none;
+    font-size:14px;
+    color:var(--muted);
+    text-decoration:none;
 }
 
-.nav-links a:hover{
-color:var(--black);
-}
-
+.nav-links a:hover,
 .nav-links .active{
-color:var(--black);
-font-weight:500;
+    color:var(--black);
 }
 
 .nav-cta{
-background:var(--black)!important;
-color:var(--white)!important;
-padding:10px 20px;
-border-radius:6px;
+    background:var(--black)!important;
+    color:var(--white)!important;
+    padding:10px 20px;
+    border-radius:6px;
 }
 
 section{
-padding:95px 5vw;
+    padding:95px 5vw;
 }
 
 .container{
-max-width:1180px;
-margin:auto;
+    max-width:1180px;
+    margin:auto;
 }
 
 .label{
-font-size:11px;
-font-weight:600;
-text-transform:uppercase;
-letter-spacing:.12em;
-color:var(--green);
-margin-bottom:14px;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--green);
+    margin-bottom:14px;
 }
 
 h1,h2,h3{
-font-family:var(--display);
+    font-family:var(--display);
 }
 
 h1{
-font-size:clamp(45px,7vw,80px);
-line-height:.98;
-letter-spacing:-.055em;
-font-weight:800;
+    font-size:clamp(45px,7vw,82px);
+    line-height:.98;
+    letter-spacing:-.055em;
+    font-weight:800;
 }
 
 h1 em{
-font-style:normal;
-color:var(--green);
+    color:var(--green);
+    font-style:normal;
 }
 
 h2{
-font-size:clamp(32px,4vw,52px);
-line-height:1.05;
-letter-spacing:-.04em;
-font-weight:800;
+    font-size:clamp(32px,4vw,52px);
+    line-height:1.05;
+    letter-spacing:-.04em;
+    font-weight:800;
 }
 
 h3{
-font-size:21px;
-line-height:1.2;
+    font-size:21px;
+    line-height:1.2;
 }
 
 .sub{
-font-size:17px;
-color:var(--muted);
-line-height:1.75;
-max-width:700px;
-font-weight:300;
+    font-size:17px;
+    color:var(--muted);
+    line-height:1.75;
+    max-width:720px;
+    font-weight:300;
 }
 
 .hero{
-min-height:72vh;
-padding-top:160px;
+    min-height:70vh;
+    padding-top:160px;
 
-display:flex;
-align-items:center;
+    display:flex;
+    align-items:center;
 
-position:relative;
-overflow:hidden;
+    position:relative;
+    overflow:hidden;
 }
 
 .hero:after{
-content:"CASE STUDIES";
+    content:"CASE STUDIES";
 
-position:absolute;
+    position:absolute;
+    right:-60px;
+    bottom:-30px;
 
-right:-60px;
-bottom:-30px;
+    font-family:var(--display);
+    font-size:clamp(90px,15vw,220px);
+    font-weight:800;
 
-font-family:var(--display);
-font-size:clamp(90px,15vw,220px);
-font-weight:800;
+    color:rgba(29,158,117,.07);
 
-color:rgba(29,158,117,.07);
-
-pointer-events:none;
-}
-
-.breadcrumb{
-font-size:12px;
-color:var(--muted);
-margin-bottom:30px;
-}
-
-.breadcrumb a{
-text-decoration:none;
-}
-
-.breadcrumb span{
-margin:0 8px;
-color:#aaa;
+    pointer-events:none;
 }
 
 .hero-copy{
-position:relative;
-z-index:2;
+    position:relative;
+    z-index:2;
+}
+
+.breadcrumb{
+    font-size:12px;
+    color:var(--muted);
+    margin-bottom:30px;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+}
+
+.breadcrumb span{
+    margin:0 8px;
+    color:#aaa;
 }
 
 .hero-description{
-margin-top:25px;
+    margin-top:25px;
 }
 
-.hero-actions{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:30px;
+.actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:32px;
 }
 
 .btn{
-display:inline-block;
-padding:13px 25px;
-border-radius:8px;
-text-decoration:none;
-font-size:14px;
-font-weight:500;
-transition:.2s;
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    transition:.2s;
 }
 
 .btn-black{
-background:var(--black);
-color:var(--white);
+    background:var(--black);
+    color:var(--white);
 }
 
 .btn-black:hover{
-background:var(--green-dark);
-transform:translateY(-2px);
+    background:var(--green-dark);
+    transform:translateY(-2px);
 }
 
 .btn-outline{
-border:1px solid var(--black);
+    border:1px solid var(--black);
 }
 
 .btn-outline:hover{
-background:var(--black);
-color:var(--white);
+    background:var(--black);
+    color:var(--white);
 }
 
-.orientation{
-background:var(--green-light);
+.intro{
+    background:var(--green-light);
 }
 
-.orientation-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-align-items:center;
+.intro-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
 }
 
 .statement{
-font-family:var(--display);
-font-size:28px;
-line-height:1.2;
-font-weight:700;
+    font-family:var(--display);
+    font-size:28px;
+    line-height:1.25;
+    font-weight:700;
 }
 
-.filter-section{
-padding-top:70px;
-padding-bottom:40px;
+.library{
+    padding-top:75px;
 }
 
-.filter-header{
-display:flex;
-justify-content:space-between;
-align-items:end;
-gap:30px;
-margin-bottom:28px;
+.library-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:30px;
+    margin-bottom:30px;
 }
 
-.filter-buttons{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
+.filters{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
 }
 
 .filter-btn{
-border:1px solid var(--border);
-background:transparent;
+    border:1px solid var(--border);
+    background:transparent;
 
-padding:9px 16px;
+    padding:9px 16px;
+    border-radius:100px;
 
-border-radius:100px;
+    font-family:var(--body);
+    font-size:12px;
 
-font-family:var(--body);
-font-size:12px;
-
-cursor:pointer;
-
-transition:.2s;
+    cursor:pointer;
+    transition:.2s;
 }
 
 .filter-btn:hover{
-border-color:var(--green);
-color:var(--green);
+    border-color:var(--green);
+    color:var(--green);
 }
 
 .filter-btn.active{
-background:var(--black);
-color:var(--white);
-border-color:var(--black);
+    background:var(--black);
+    color:var(--white);
+    border-color:var(--black);
 }
 
 .search{
-border:1px solid var(--border);
-background:transparent;
+    width:230px;
 
-padding:11px 15px;
+    border:1px solid var(--border);
+    background:transparent;
 
-border-radius:7px;
+    padding:11px 14px;
 
-font-family:var(--body);
-font-size:13px;
+    border-radius:7px;
 
-width:230px;
-outline:none;
+    font-family:var(--body);
+    font-size:13px;
+
+    outline:none;
 }
 
 .search:focus{
-border-color:var(--green);
+    border-color:var(--green);
 }
 
 .case-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 
 .case-card{
-border:1px solid var(--border);
-border-radius:12px;
-overflow:hidden;
-background:var(--white);
+    border:1px solid var(--border);
+    border-radius:12px;
 
-transition:.25s;
+    background:var(--white);
 
-display:flex;
-flex-direction:column;
+    padding:32px;
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:330px;
+
+    transition:.25s;
 }
 
 .case-card:hover{
-transform:translateY(-5px);
-border-color:rgba(29,158,117,.45);
-box-shadow:0 15px 35px rgba(0,0,0,.06);
-}
-
-.case-top{
-padding:28px 28px 15px;
+    transform:translateY(-5px);
+    border-color:rgba(29,158,117,.45);
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
 }
 
 .case-type{
-font-size:10px;
-text-transform:uppercase;
-letter-spacing:.1em;
-color:var(--green);
-font-weight:600;
-margin-bottom:13px;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:var(--green);
+    font-weight:600;
+    margin-bottom:13px;
 }
 
 .case-card h3{
-font-size:23px;
+    font-size:27px;
 }
 
-.case-card p{
-font-size:14px;
-line-height:1.7;
-color:var(--muted);
-margin-top:12px;
+.case-description{
+    font-size:14px;
+    color:var(--muted);
+    line-height:1.75;
+    margin-top:14px;
 }
 
-.case-bottom{
-margin-top:auto;
-padding:20px 28px 25px;
+.case-footer{
+    margin-top:auto;
+    padding-top:25px;
 }
 
 .tags{
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-margin-bottom:18px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:20px;
 }
 
 .tags span{
-font-size:9px;
-border:1px solid var(--border);
-border-radius:100px;
-padding:5px 8px;
-color:var(--muted);
+    font-size:9px;
+    border:1px solid var(--border);
+    border-radius:100px;
+    padding:5px 8px;
+    color:var(--muted);
 }
 
-.case-link{
-font-size:13px;
-font-weight:500;
-text-decoration:none;
+.read-link{
+    font-size:13px;
+    font-weight:500;
+    text-decoration:none;
 }
 
-.case-link:hover{
-color:var(--green);
+.read-link:hover{
+    color:var(--green);
 }
 
-.hidden{
-display:none!important;
+.no-results{
+    display:none;
+    padding:50px 20px;
+    text-align:center;
+    color:var(--muted);
+    border:1px dashed var(--border);
+    border-radius:12px;
 }
 
 .dark{
-background:var(--black);
-color:var(--white);
+    background:var(--black);
+    color:var(--white);
 }
 
 .dark .sub{
-color:rgba(255,255,255,.55);
+    color:rgba(255,255,255,.55);
 }
 
 .framework{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:45px;
 }
 
 .framework-card{
-border:1px solid rgba(255,255,255,.12);
-padding:28px;
-border-radius:10px;
+    border:1px solid rgba(255,255,255,.12);
+    padding:28px;
+    border-radius:10px;
 }
 
 .framework-number{
-font-family:var(--display);
-font-size:40px;
-font-weight:800;
-color:rgba(29,158,117,.45);
-margin-bottom:18px;
+    font-family:var(--display);
+    font-size:40px;
+    font-weight:800;
+    color:rgba(29,158,117,.45);
+    margin-bottom:18px;
 }
 
 .framework-card h3{
-font-size:19px;
+    font-size:19px;
 }
 
 .framework-card p{
-font-size:13px;
-color:rgba(255,255,255,.5);
-margin-top:9px;
+    font-size:13px;
+    color:rgba(255,255,255,.5);
+    margin-top:9px;
 }
 
 .cta{
-background:var(--green-dark);
-color:var(--white);
-text-align:center;
+    background:var(--green-dark);
+    color:var(--white);
+    text-align:center;
 }
 
 .cta h2{
-max-width:750px;
-margin:0 auto 18px;
+    max-width:760px;
+    margin:0 auto 18px;
 }
 
 .cta p{
-max-width:600px;
-margin:auto;
-color:rgba(255,255,255,.65);
+    max-width:620px;
+    margin:auto;
+    color:rgba(255,255,255,.65);
 }
 
 .cta .btn{
-margin-top:30px;
-background:var(--white);
-color:var(--green-dark);
-font-family:var(--display);
-font-weight:700;
+    margin-top:30px;
+    background:var(--white);
+    color:var(--green-dark);
+
+    font-family:var(--display);
+    font-weight:700;
 }
 
 footer{
-background:var(--black);
-color:rgba(255,255,255,.4);
+    background:var(--black);
+    color:rgba(255,255,255,.4);
 
-padding:42px 5vw;
+    padding:42px 5vw;
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-font-size:13px;
+    font-size:13px;
 }
 
 .footer-brand{
-font-family:var(--display);
-font-weight:800;
-color:white;
+    font-family:var(--display);
+    font-weight:800;
+    color:white;
 }
 
 .footer-brand span{
-color:var(--green);
+    color:var(--green);
 }
 
 .footer-links{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .footer-links a{
-text-decoration:none;
-color:rgba(255,255,255,.4);
+    text-decoration:none;
+    color:rgba(255,255,255,.4);
 }
 
 .footer-links a:hover{
-color:white;
+    color:white;
 }
 
-.modal{
-position:fixed;
-inset:0;
-z-index:500;
-
-background:rgba(0,0,0,.72);
-
-display:none;
-align-items:center;
-justify-content:center;
-
-padding:25px;
-}
-
-.modal.show{
-display:flex;
-}
-
-.modal-box{
-background:var(--white);
-
-width:min(760px,100%);
-max-height:85vh;
-
-overflow:auto;
-
-border-radius:14px;
-
-padding:40px;
-
-position:relative;
-}
-
-.close{
-position:absolute;
-top:18px;
-right:20px;
-
-border:0;
-background:none;
-
-font-size:25px;
-
-cursor:pointer;
-}
-
-.modal-type{
-font-size:10px;
-text-transform:uppercase;
-letter-spacing:.1em;
-color:var(--green);
-font-weight:600;
-margin-bottom:12px;
-}
-
-.modal-box h2{
-font-size:38px;
-margin-bottom:20px;
-}
-
-.modal-box p{
-color:var(--muted);
-font-size:14px;
-line-height:1.8;
-margin-bottom:15px;
-}
-
-.modal-box h4{
-font-family:var(--display);
-font-size:17px;
-margin-top:25px;
-margin-bottom:8px;
+.hidden{
+    display:none!important;
 }
 
 @media(max-width:900px){
 
-.case-grid{
-grid-template-columns:1fr 1fr;
-}
+    .case-grid{
+        grid-template-columns:1fr;
+    }
 
-.framework{
-grid-template-columns:1fr 1fr;
-}
+    .framework{
+        grid-template-columns:1fr 1fr;
+    }
 
 }
 
 @media(max-width:700px){
 
-.nav-links{
-display:none;
-}
+    .nav-links{
+        display:none;
+    }
 
-section{
-padding:75px 5vw;
-}
+    section{
+        padding:75px 5vw;
+    }
 
-.hero{
-padding-top:130px;
-}
+    .hero{
+        padding-top:130px;
+    }
 
-.orientation-grid{
-grid-template-columns:1fr;
-}
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
 
-.filter-header{
-align-items:start;
-flex-direction:column;
-}
+    .library-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
 
-.search{
-width:100%;
-}
+    .search{
+        width:100%;
+    }
 
-.case-grid,
-.framework{
-grid-template-columns:1fr;
-}
+    .framework{
+        grid-template-columns:1fr;
+    }
 
-footer{
-flex-direction:column;
-gap:20px;
-text-align:center;
-}
+    footer{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
 
-.footer-links{
-justify-content:center;
-}
-
-.modal-box{
-padding:28px;
-}
+    .footer-links{
+        justify-content:center;
+    }
 
 }
 
@@ -658,12 +582,12 @@ padding:28px;
 
 </head>
 
-
 <body>
 
-
 <!-- ===================================================== -->
-<!-- NAV -->
+
+<!-- NAVIGATION -->
+
 <!-- ===================================================== -->
 
 <nav>
@@ -684,18 +608,19 @@ DT<span>.</span>
 
 <a href="../contact/">Let's Talk</a>
 
-<a href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
+<a
+href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
 class="nav-cta">
-Free Audit
-</a>
+Free Audit </a>
 
 </div>
 
 </nav>
 
-
 <!-- ===================================================== -->
-<!-- CASE STUDY WELCOME -->
+
+<!-- WELCOME -->
+
 <!-- ===================================================== -->
 
 <section class="hero">
@@ -712,11 +637,9 @@ Case Studies
 
 </div>
 
-
 <div class="label">
 Case Studies
 </div>
-
 
 <h1>
 Systems thinking
@@ -724,29 +647,27 @@ Systems thinking
 in <em>action.</em>
 </h1>
 
-
 <p class="sub hero-description">
 
-This is where strategy meets execution.
+Welcome to the Case Studies library.
 
-Explore business assessments, transformation scenarios,
-workflow architecture, CRM systems, automation,
-and operational improvements.
+This is where I break down business problems,
+systems challenges, operational bottlenecks,
+automation opportunities, and transformation
+scenarios into practical solutions.
 
 </p>
 
+<div class="actions">
 
-<div class="hero-actions">
-
-<a href="#library"
-class="btn btn-black">
-Explore Case Studies ↓
+<a href="#library" class="btn btn-black">
+Explore the Library ↓
 </a>
 
-<a href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
+<a
+href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
 class="btn btn-outline">
-Request a Free Audit
-</a>
+Start a Free Audit </a>
 
 </div>
 
@@ -754,33 +675,34 @@ Request a Free Audit
 
 </section>
 
-
 <!-- ===================================================== -->
+
 <!-- ORIENTATION -->
+
 <!-- ===================================================== -->
 
-<section class="orientation">
+<section class="intro">
 
-<div class="container orientation-grid">
+<div class="container intro-grid">
 
 <div>
 
 <div class="label">
-What you're looking at
+How to use this section
 </div>
 
 <h2>
-Not just screenshots.
+Don't just look at the tools.
+Look at the thinking.
 </h2>
 
 </div>
 
-
 <div class="statement">
 
-These case studies show how I think through
-business problems — from diagnosis to system
-design, implementation, and optimization.
+Each case study shows how a business problem can be
+examined across people, process, technology, data,
+customer journey, and operations.
 
 </div>
 
@@ -788,17 +710,17 @@ design, implementation, and optimization.
 
 </section>
 
-
-<!-- ===================================================== -->
-<!-- CASE STUDY LIBRARY -->
 <!-- ===================================================== -->
 
-<section id="library" class="filter-section">
+<!-- LIBRARY -->
+
+<!-- ===================================================== -->
+
+<section class="library" id="library">
 
 <div class="container">
 
-
-<div class="filter-header">
+<div class="library-header">
 
 <div>
 
@@ -812,360 +734,212 @@ Explore the work.
 
 </div>
 
-
 <input
 type="search"
-id="search"
+id="searchInput"
 class="search"
 placeholder="Search case studies..."
-aria-label="Search case studies"
->
+aria-label="Search case studies">
 
 </div>
 
+<!-- FILTERS -->
 
-<!-- FILTER BUTTONS -->
+<div class="filters">
 
-<div class="filter-buttons">
-
-<button class="filter-btn active"
+<button
+class="filter-btn active"
 data-filter="all">
-All
-</button>
+All </button>
 
-<button class="filter-btn"
+<button
+class="filter-btn"
 data-filter="operations">
-Operations
-</button>
+Operations </button>
 
-<button class="filter-btn"
+<button
+class="filter-btn"
 data-filter="automation">
-Automation
-</button>
+Automation </button>
 
-<button class="filter-btn"
+<button
+class="filter-btn"
 data-filter="crm">
-CRM / GHL
-</button>
+CRM / GHL </button>
 
-<button class="filter-btn"
+<button
+class="filter-btn"
 data-filter="systems">
-Systems
-</button>
+Systems </button>
 
-<button class="filter-btn"
+<button
+class="filter-btn"
 data-filter="marketing">
-Marketing Systems
-</button>
+Marketing Systems </button>
 
 </div>
 
+<!-- ===================================================== -->
 
-<!-- CASE STUDIES -->
+<!-- CASE STUDY CARDS -->
+
+<!-- ===================================================== -->
 
 <div class="case-grid" id="caseGrid">
 
-
-<!-- ================================================= -->
-<!-- CASE 01 -->
-<!-- ================================================= -->
+<!-- CASE STUDY 01 -->
 
 <article
 class="case-card"
-data-category="systems operations"
-data-search="multi brand business ecosystem transformation operations systems">
+data-category="operations systems crm automation"
+data-search="multi brand business ecosystem transformation operations systems crm automation">
 
-<div class="case-top">
+<div>
 
 <div class="case-type">
-Strategic Scenario
+Strategic Assessment
 </div>
 
 <h3>
 Multi-Brand Business Ecosystem Transformation
 </h3>
 
-<p>
-A systems-level assessment of a growing multi-brand
-business ecosystem requiring stronger organization,
-CRM structure, automation, and operational visibility.
+<p class="case-description">
+
+A systems-level assessment focused on organizing
+a growing multi-brand business ecosystem,
+connecting operations, CRM, workflows,
+automation, and visibility.
+
 </p>
 
 </div>
 
-
-<div class="case-bottom">
+<div class="case-footer">
 
 <div class="tags">
 
-<span>Operations</span>
-<span>Systems</span>
-<span>CRM</span>
-<span>Automation</span>
+<span>Operations</span> <span>Systems</span> <span>CRM</span> <span>Automation</span>
 
 </div>
 
+<a
+href="./multi-brand-ecosystem/"
+class="read-link">
 
-<a href="#"
-class="case-link"
-onclick="openCase('ecosystem');return false;">
-View Case Study →
+Read Case Study →
+
 </a>
 
 </div>
 
 </article>
 
-
-<!-- ================================================= -->
-<!-- CASE 02 -->
-<!-- ================================================= -->
-
-<article
-class="case-card"
-data-category="crm automation"
-data-search="gohighlevel crm migration automation customer journey">
-
-<div class="case-top">
-
-<div class="case-type">
-Systems Assessment
-</div>
-
-<h3>
-GoHighLevel CRM & Customer Journey
-</h3>
-
-<p>
-A structured approach to consolidating customer data,
-pipelines, calendars, forms, workflows, and automations
-inside a unified CRM environment.
-</p>
-
-</div>
-
-
-<div class="case-bottom">
-
-<div class="tags">
-
-<span>GHL</span>
-<span>CRM</span>
-<span>Workflows</span>
-
-</div>
-
-
-<a href="#"
-class="case-link"
-onclick="openCase('ghl');return false;">
-View Case Study →
-</a>
-
-</div>
-
-</article>
-
-
-<!-- ================================================= -->
-<!-- CASE 03 -->
-<!-- ================================================= -->
+<!-- CASE STUDY 02 -->
 
 <article
 class="case-card"
 data-category="automation systems"
-data-search="workflow automation process manual repetitive tasks">
+data-search="tools workflow automation systems process manual work">
 
-<div class="case-top">
+<div>
 
 <div class="case-type">
 Strategic Scenario
 </div>
 
 <h3>
-Workflow Automation Architecture
+The Tools Aren't the System. The Workflow Is.
 </h3>
 
-<p>
-Mapping repetitive operational work into structured
-automation flows while preserving human decision points,
-quality control, and visibility.
+<p class="case-description">
+
+A scenario demonstrating how disconnected tools,
+manual processes, and unclear handoffs can be
+redesigned into a more coherent operating workflow.
+
 </p>
 
 </div>
 
-
-<div class="case-bottom">
+<div class="case-footer">
 
 <div class="tags">
 
-<span>Automation</span>
-<span>Workflow</span>
-<span>QA</span>
+<span>Systems</span> <span>Workflow</span> <span>Automation</span>
 
 </div>
 
+<a
+href="./tools-arent-the-system/"
+class="read-link">
 
-<a href="#"
-class="case-link"
-onclick="openCase('automation');return false;">
-View Case Study →
+Read Case Study →
+
 </a>
 
 </div>
 
 </article>
 
+<!-- ===================================================== -->
 
-<!-- ================================================= -->
-<!-- CASE 04 -->
-<!-- ================================================= -->
+<!-- FUTURE CASE STUDY TEMPLATE -->
+
+<!-- ===================================================== -->
 
 <article
 class="case-card"
-data-category="operations systems"
-data-search="business operations process mapping bottlenecks SOP">
+data-category="crm automation"
+data-search="crm gohighlevel automation customer journey">
 
-<div class="case-top">
+<div>
 
 <div class="case-type">
-Operations Assessment
+Future Case Study
 </div>
 
 <h3>
-Operational Process Transformation
+CRM & Customer Journey Transformation
 </h3>
 
-<p>
-Turning fragmented processes, unclear ownership,
-manual handoffs, and undocumented workflows into
-a structured operating model.
+<p class="case-description">
+
+A future case study slot for CRM architecture,
+pipeline design, customer journeys, automation,
+and GoHighLevel implementation work.
+
 </p>
 
 </div>
 
-
-<div class="case-bottom">
+<div class="case-footer">
 
 <div class="tags">
 
-<span>Operations</span>
-<span>Process</span>
-<span>SOP</span>
+<span>CRM</span> <span>GHL</span> <span>Automation</span>
 
 </div>
 
+<span
+class="read-link"
+style="color:var(--muted);cursor:default;">
 
-<a href="#"
-class="case-link"
-onclick="openCase('operations');return false;">
-View Case Study →
-</a>
+Coming Soon
+
+</span>
 
 </div>
 
 </article>
 
-
-<!-- ================================================= -->
-<!-- CASE 05 -->
-<!-- ================================================= -->
-
-<article
-class="case-card"
-data-category="marketing crm"
-data-search="marketing funnel lead generation CRM customer journey">
-
-<div class="case-top">
-
-<div class="case-type">
-Marketing Systems
 </div>
 
-<h3>
-Lead-to-Customer Journey Architecture
-</h3>
+<div
+class="no-results"
+id="noResults">
 
-<p>
-Connecting lead capture, qualification, pipeline movement,
-follow-up, booking, and customer handoff into one
-measurable journey.
-</p>
-
-</div>
-
-
-<div class="case-bottom">
-
-<div class="tags">
-
-<span>Marketing</span>
-<span>CRM</span>
-<span>Funnels</span>
-
-</div>
-
-
-<a href="#"
-class="case-link"
-onclick="openCase('marketing');return false;">
-View Case Study →
-</a>
-
-</div>
-
-</article>
-
-
-<!-- ================================================= -->
-<!-- CASE 06 -->
-<!-- ================================================= -->
-
-<article
-class="case-card"
-data-category="systems operations"
-data-search="business systems audit technology assessment tools">
-
-<div class="case-top">
-
-<div class="case-type">
-Systems Audit
-</div>
-
-<h3>
-Business Systems Audit
-</h3>
-
-<p>
-A structured review of people, process, technology,
-data, customer journey, and operational dependencies
-to identify the highest-value improvement opportunities.
-</p>
-
-</div>
-
-
-<div class="case-bottom">
-
-<div class="tags">
-
-<span>Audit</span>
-<span>Systems</span>
-<span>Strategy</span>
-
-</div>
-
-
-<a href="#"
-class="case-link"
-onclick="openCase('audit');return false;">
-View Case Study →
-</a>
-
-</div>
-
-</article>
-
+No case studies match your search or selected category.
 
 </div>
 
@@ -1173,9 +947,10 @@ View Case Study →
 
 </section>
 
-
 <!-- ===================================================== -->
-<!-- HOW TO READ -->
+
+<!-- HOW CASE STUDIES ARE BUILT -->
+
 <!-- ===================================================== -->
 
 <section class="dark">
@@ -1183,17 +958,25 @@ View Case Study →
 <div class="container">
 
 <div class="label">
-How I approach a case
+The way I think
 </div>
 
 <h2>
-Every problem gets looked at
-from the system level.
+Every case starts with
+the business problem.
 </h2>
 
+<p class="sub" style="margin-top:20px">
+
+The tools come later.
+
+The first job is understanding what the business
+is trying to accomplish and where the current system
+is getting in the way.
+
+</p>
 
 <div class="framework">
-
 
 <div class="framework-card">
 
@@ -1211,7 +994,6 @@ What is the business trying to accomplish?
 
 </div>
 
-
 <div class="framework-card">
 
 <div class="framework-number">
@@ -1228,7 +1010,6 @@ Who owns the work and where are the handoffs?
 
 </div>
 
-
 <div class="framework-card">
 
 <div class="framework-number">
@@ -1240,11 +1021,10 @@ Process
 </h3>
 
 <p>
-How does work actually move?
+How does work actually move today?
 </p>
 
 </div>
-
 
 <div class="framework-card">
 
@@ -1257,11 +1037,10 @@ Technology
 </h3>
 
 <p>
-Which tools should support the process?
+Which platforms should support the process?
 </p>
 
 </div>
-
 
 <div class="framework-card">
 
@@ -1274,11 +1053,10 @@ Data
 </h3>
 
 <p>
-What information needs to be captured and measured?
+What needs to be captured, measured, and reported?
 </p>
 
 </div>
-
 
 <div class="framework-card">
 
@@ -1296,25 +1074,28 @@ Where can the customer journey break down?
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
 <!-- ===================================================== -->
+
 <!-- CTA -->
+
 <!-- ===================================================== -->
 
 <section class="cta">
 
 <div class="container">
 
-<div class="label"
+<div
+class="label"
 style="color:rgba(255,255,255,.5);">
+
 Want your business assessed?
+
 </div>
 
 <h2>
@@ -1323,14 +1104,15 @@ Let's find the system behind the problem.
 
 <p>
 
-You don't need to know whether the issue is your
+You don't have to know whether the issue is your
 people, process, CRM, automation, or technology.
 
 Start with the audit and find out.
 
 </p>
 
-<a href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
+<a
+href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
 class="btn">
 
 Start the Free Business Audit →
@@ -1341,9 +1123,10 @@ Start the Free Business Audit →
 
 </section>
 
-
 <!-- ===================================================== -->
+
 <!-- FOOTER -->
+
 <!-- ===================================================== -->
 
 <footer>
@@ -1360,7 +1143,6 @@ Operations & Systems Integrator
 
 </div>
 
-
 <div class="footer-links">
 
 <a href="../index.html">Home</a>
@@ -1375,14 +1157,16 @@ Operations & Systems Integrator
 
 <a href="../contact/">Let's Talk</a>
 
-<a href="https://www.linkedin.com/in/deejaytumanao"
+<a
+href="https://www.linkedin.com/in/deejaytumanao"
 target="_blank"
 rel="noopener">
+
 LinkedIn
+
 </a>
 
 </div>
-
 
 <div>
 © 2026 Deejay Tumamao
@@ -1390,34 +1174,13 @@ LinkedIn
 
 </footer>
 
-
-<!-- ===================================================== -->
-<!-- CASE STUDY MODAL -->
 <!-- ===================================================== -->
 
-<div class="modal" id="caseModal">
+<!-- FILTER + SEARCH -->
 
-<div class="modal-box">
-
-<button
-class="close"
-onclick="closeCase()">
-×
-</button>
-
-<div id="modalContent"></div>
-
-</div>
-
-</div>
-
+<!-- ===================================================== -->
 
 <script>
-
-
-/* =====================================================
-FILTER SYSTEM
-===================================================== */
 
 const buttons =
 document.querySelectorAll(".filter-btn");
@@ -1425,9 +1188,11 @@ document.querySelectorAll(".filter-btn");
 const cards =
 document.querySelectorAll(".case-card");
 
-const search =
-document.getElementById("search");
+const searchInput =
+document.getElementById("searchInput");
 
+const noResults =
+document.getElementById("noResults");
 
 let currentFilter = "all";
 
@@ -1436,9 +1201,9 @@ buttons.forEach(button => {
 
 button.addEventListener("click", () => {
 
-buttons.forEach(btn =>
-btn.classList.remove("active")
-);
+buttons.forEach(btn => {
+btn.classList.remove("active");
+});
 
 button.classList.add("active");
 
@@ -1452,37 +1217,46 @@ filterCases();
 });
 
 
-search.addEventListener("input", filterCases);
+searchInput.addEventListener(
+"input",
+filterCases
+);
 
 
 function filterCases(){
 
-const term =
-search.value.toLowerCase().trim();
+const searchTerm =
+searchInput.value
+.toLowerCase()
+.trim();
+
+let visibleCount = 0;
 
 
 cards.forEach(card => {
 
 const categories =
-card.dataset.category;
+card.dataset.category || "";
 
-const text =
-card.dataset.search;
+const searchableText =
+card.dataset.search || "";
 
 
-const matchesCategory =
+const categoryMatch =
 currentFilter === "all" ||
 categories.includes(currentFilter);
 
 
-const matchesSearch =
-!term ||
-text.includes(term);
+const searchMatch =
+searchTerm === "" ||
+searchableText.includes(searchTerm);
 
 
-if(matchesCategory && matchesSearch){
+if(categoryMatch && searchMatch){
 
 card.classList.remove("hidden");
+
+visibleCount++;
 
 }else{
 
@@ -1492,290 +1266,21 @@ card.classList.add("hidden");
 
 });
 
-}
 
+if(visibleCount === 0){
 
-/* =====================================================
-CASE STUDY CONTENT
-===================================================== */
+noResults.style.display = "block";
 
-const cases = {
+}else{
 
-
-ecosystem: {
-
-type:"Strategic Scenario",
-
-title:"Multi-Brand Business Ecosystem Transformation",
-
-problem:`
-A growing business ecosystem can quickly become difficult
-to manage when multiple brands, audiences, offers, tools,
-and workflows develop independently.
-
-The challenge is not simply choosing another platform.
-The challenge is creating one operating structure that
-allows the brands to remain distinct while the underlying
-business infrastructure becomes easier to manage.
-`,
-
-approach:`
-Assess the existing business ecosystem, identify duplicated
-processes and disconnected systems, map the customer journeys,
-then design a unified operating model across CRM, workflows,
-automation, reporting, and team responsibilities.
-`,
-
-outcome:`
-A clearer operating architecture, stronger visibility,
-better-defined workflows, and a roadmap for consolidating
-the systems that matter most.
-`
-
-},
-
-
-ghl: {
-
-type:"Systems Assessment",
-
-title:"GoHighLevel CRM & Customer Journey",
-
-problem:`
-Customer information, lead follow-up, calendars, forms,
-pipelines, and automations can become fragmented when
-they are built independently.
-`,
-
-approach:`
-Map the complete customer journey first, then structure
-the CRM, pipelines, forms, calendars, workflows, automations,
-and communication points around that journey.
-`,
-
-outcome:`
-A CRM environment designed around the actual customer
-journey instead of a collection of disconnected features.
-`
-
-},
-
-
-automation: {
-
-type:"Strategic Scenario",
-
-title:"Workflow Automation Architecture",
-
-problem:`
-Teams often automate individual tasks without first
-understanding the entire workflow. This can create faster
-processes that are still fundamentally broken.
-`,
-
-approach:`
-Map the current-state workflow, identify repetitive tasks,
-define decision points, establish ownership, then automate
-only the parts that should be automated.
-`,
-
-outcome:`
-Less repetitive work, clearer ownership, stronger visibility,
-and automation that supports the process instead of hiding it.
-`
-
-},
-
-
-operations: {
-
-type:"Operations Assessment",
-
-title:"Operational Process Transformation",
-
-problem:`
-Growing businesses often rely on undocumented knowledge,
-manual handoffs, unclear ownership, and processes that
-only work because specific people know how to make them work.
-`,
-
-approach:`
-Document the current state, identify bottlenecks and
-dependencies, define ownership, design the future state,
-then create the supporting documentation and workflows.
-`,
-
-outcome:`
-A more repeatable operating model that can be understood,
-managed, measured, and improved.
-`
-
-},
-
-
-marketing: {
-
-type:"Marketing Systems",
-
-title:"Lead-to-Customer Journey Architecture",
-
-problem:`
-Marketing performance can break down between lead capture,
-qualification, follow-up, booking, sales, and customer
-handoff.
-`,
-
-approach:`
-Map the journey from first touch through conversion,
-define the pipeline stages and ownership, then connect
-forms, CRM, automation, communication, calendars, and
-follow-up.
-`,
-
-outcome:`
-A measurable customer journey with clearer handoffs,
-automated follow-up, and stronger operational visibility.
-`
-
-},
-
-
-audit: {
-
-type:"Systems Audit",
-
-title:"Business Systems Audit",
-
-problem:`
-Businesses often know that something is inefficient but
-cannot immediately determine whether the real problem is
-people, process, technology, data, or the way those pieces
-interact.
-`,
-
-approach:`
-Assess the business across people, process, technology,
-data, customer journey, and operational dependencies.
-Then prioritize the highest-value opportunities.
-`,
-
-outcome:`
-A clearer picture of what is actually happening, what needs
-attention first, and where systems or automation can create
-meaningful leverage.
-`
+noResults.style.display = "none";
 
 }
 
-};
-
-
-/* =====================================================
-OPEN CASE STUDY
-===================================================== */
-
-function openCase(id){
-
-const item =
-cases[id];
-
-const content = `
-
-<div class="modal-type">
-${item.type}
-</div>
-
-<h2>
-${item.title}
-</h2>
-
-<h4>
-The Challenge
-</h4>
-
-<p>
-${item.problem}
-</p>
-
-<h4>
-The Approach
-</h4>
-
-<p>
-${item.approach}
-</p>
-
-<h4>
-Expected / Intended Outcome
-</h4>
-
-<p>
-${item.outcome}
-</p>
-
-<div style="margin-top:30px;">
-
-<a
-href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
-class="btn btn-black">
-
-Want this level of analysis for your business? →
-
-</a>
-
-</div>
-
-`;
-
-document.getElementById("modalContent")
-.innerHTML = content;
-
-document.getElementById("caseModal")
-.classList.add("show");
-
-document.body.style.overflow="hidden";
-
 }
-
-
-/* =====================================================
-CLOSE CASE STUDY
-===================================================== */
-
-function closeCase(){
-
-document.getElementById("caseModal")
-.classList.remove("show");
-
-document.body.style.overflow="";
-
-}
-
-
-document.getElementById("caseModal")
-.addEventListener("click", function(e){
-
-if(e.target === this){
-
-closeCase();
-
-}
-
-});
-
-
-document.addEventListener("keydown", function(e){
-
-if(e.key === "Escape"){
-
-closeCase();
-
-}
-
-});
 
 </script>
 
-
 </body>
+
 </html>
