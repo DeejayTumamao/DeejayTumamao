@@ -2,740 +2,1044 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Case Studies | Deejay Tumamao</title>
 
-<meta name="description" content="Explore business systems, operations, workflow, automation, CRM, and transformation case studies by Deejay Tumamao.">
+<meta
+name="description"
+content="Explore business systems, operations, workflow, automation, CRM, and strategic transformation case studies by Deejay Tumamao."
+>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+<!-- SAME FONT SYSTEM AS MAIN WEBSITE -->
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Syne:wght@400;500;600;700;800&display=swap"
+rel="stylesheet"
+>
 
 <style>
 
 /* =========================================================
-   GLOBAL
+   DESIGN SYSTEM
+   MATCHES MAIN DEEJAY TUMAMAO WEBSITE
 ========================================================= */
 
 :root {
+
     --black: #0A0A0A;
     --white: #F5F2EC;
+
     --green: #1D9E75;
     --green-dark: #085041;
     --green-light: #E1F5EE;
+
     --muted: #6B6B6B;
+
     --border: rgba(10,10,10,.10);
 
     --display: 'Syne', sans-serif;
     --body: 'DM Sans', sans-serif;
+
 }
 
+
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
+
     box-sizing: border-box;
+
     margin: 0;
     padding: 0;
+
 }
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
+
     font-family: var(--body);
+
     background: var(--white);
+
     color: var(--black);
-    line-height: 1.6;
+
+    overflow-x: hidden;
+
 }
 
 a {
+
     color: inherit;
+
 }
 
 .container {
-    width: min(1180px, 90%);
-    margin: 0 auto;
+
+    max-width: 1180px;
+
+    margin: auto;
+
 }
 
 section {
-    padding: 100px 0;
+
+    padding: 100px 5vw;
+
 }
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
 
 h1,
 h2,
 h3 {
+
     font-family: var(--display);
+
+}
+
+h1 {
+
+    font-size: clamp(44px, 7vw, 82px);
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+
+    font-weight: 800;
+
+}
+
+h2 {
+
+    font-size: clamp(32px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    letter-spacing: -.04em;
+
+    font-weight: 800;
+
+}
+
+h3 {
+
+    font-size: 21px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+}
+
+.sub {
+
+    font-size: 17px;
+
+    color: var(--muted);
+
+    line-height: 1.75;
+
+    max-width: 700px;
+
+    font-weight: 300;
+
 }
 
 .label {
+
     font-size: 11px;
-    font-weight: 700;
+
+    font-weight: 600;
+
     text-transform: uppercase;
-    letter-spacing: .13em;
+
+    letter-spacing: .12em;
+
     color: var(--green);
-    margin-bottom: 15px;
+
+    margin-bottom: 14px;
+
 }
+
 
 /* =========================================================
    NAVIGATION
 ========================================================= */
 
 nav {
+
     position: fixed;
+
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
 
-    padding: 20px 5%;
+    z-index: 100;
+
+    padding: 20px 5vw;
 
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 
-    background: rgba(245,242,236,.94);
+    justify-content: space-between;
+
+    background: rgba(245,242,236,.92);
+
     backdrop-filter: blur(12px);
 
     border-bottom: 1px solid var(--border);
+
 }
 
 .logo {
+
     font-family: var(--display);
-    font-size: 20px;
+
     font-weight: 800;
+
+    font-size: 18px;
+
     text-decoration: none;
+
 }
 
 .logo span {
+
     color: var(--green);
+
 }
 
 .nav-links {
+
     display: flex;
+
+    gap: 28px;
+
     align-items: center;
-    gap: 25px;
+
 }
 
 .nav-links a {
-    font-size: 13px;
-    text-decoration: none;
+
+    font-size: 14px;
+
     color: var(--muted);
-    transition: .2s;
+
+    text-decoration: none;
+
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
+
     color: var(--black);
+
+}
+
+.nav-links a.active {
+
+    color: var(--black);
+
 }
 
 .nav-cta {
-    background: var(--black);
+
+    background: var(--black) !important;
+
     color: var(--white) !important;
-    padding: 10px 18px;
-    border-radius: 7px;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    font-weight: 500 !important;
+
 }
 
-.nav-cta:hover {
-    background: var(--green-dark);
-}
 
 /* =========================================================
    HERO
 ========================================================= */
 
 .hero {
-    min-height: 72vh;
-    padding-top: 160px;
+
+    min-height: 75vh;
+
+    padding-top: 165px;
 
     display: flex;
+
     align-items: center;
 
     position: relative;
+
     overflow: hidden;
+
 }
 
-.hero::after {
-    content: "PROOF";
+.hero:before {
+
+    content: "";
 
     position: absolute;
-    right: -40px;
-    bottom: -55px;
 
-    font-family: var(--display);
-    font-size: clamp(100px, 17vw, 230px);
-    font-weight: 800;
+    right: 0;
+    top: 0;
 
-    color: rgba(29,158,117,.06);
+    width: 42%;
 
-    pointer-events: none;
+    height: 100%;
+
+    background: var(--green-light);
+
+    z-index: -1;
+
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
+.hero-copy {
 
-.breadcrumb {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 35px;
-}
-
-.breadcrumb a {
-    text-decoration: none;
-}
-
-.breadcrumb span {
-    margin: 0 8px;
-    color: #aaa;
-}
-
-.hero h1 {
-    font-size: clamp(48px, 7vw, 86px);
-    line-height: .98;
-    letter-spacing: -.055em;
-    font-weight: 800;
     max-width: 900px;
+
 }
 
 .hero h1 em {
+
     color: var(--green);
+
     font-style: normal;
+
 }
 
 .hero-description {
-    max-width: 720px;
+
     margin-top: 28px;
 
-    font-size: 17px;
-    line-height: 1.75;
+}
+
+.breadcrumb {
+
+    font-size: 12px;
+
     color: var(--muted);
-    font-weight: 300;
+
+    margin-bottom: 35px;
+
 }
 
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 32px;
-}
+.breadcrumb a {
 
-.btn {
-    display: inline-block;
-    padding: 13px 23px;
-    border-radius: 8px;
-
-    font-size: 13px;
-    font-weight: 600;
     text-decoration: none;
 
-    transition: .2s;
+}
+
+.breadcrumb span {
+
+    margin: 0 8px;
+
+    color: #aaa;
+
+}
+
+.actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 34px;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 14px 27px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: .2s ease;
+
 }
 
 .btn-black {
+
     background: var(--black);
+
     color: var(--white);
+
 }
 
 .btn-black:hover {
+
     background: var(--green-dark);
+
     transform: translateY(-2px);
+
 }
 
 .btn-outline {
-    border: 1px solid var(--black);
+
+    border: 1.5px solid var(--black);
+
 }
 
 .btn-outline:hover {
+
     background: var(--black);
+
     color: var(--white);
+
 }
+
 
 /* =========================================================
    INTRO
 ========================================================= */
 
 .intro {
+
     background: var(--green-light);
+
 }
 
 .intro-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
 
-.intro h2 {
-    font-size: clamp(34px, 4vw, 54px);
-    line-height: 1.05;
-    letter-spacing: -.04em;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
 }
 
 .intro-statement {
+
     font-family: var(--display);
-    font-size: 25px;
-    line-height: 1.35;
+
+    font-size: 26px;
+
+    line-height: 1.25;
+
     font-weight: 700;
+
 }
 
 .intro-text {
-    margin-top: 18px;
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.8;
+
+    margin-top: 20px;
+
 }
+
 
 /* =========================================================
-   CASE STUDY LIBRARY
+   LIBRARY HEADER
 ========================================================= */
 
-.library {
-    padding-top: 90px;
-}
-
 .library-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 30px;
-    margin-bottom: 35px;
-}
 
-.library-header h2 {
-    font-size: clamp(34px, 4vw, 54px);
-    line-height: 1.05;
-    letter-spacing: -.04em;
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 38px;
+
 }
 
 .search-box {
-    width: 240px;
+
+    width: 260px;
 
     padding: 12px 15px;
 
     border: 1px solid var(--border);
-    border-radius: 8px;
+
+    border-radius: 7px;
 
     background: transparent;
 
     font-family: var(--body);
+
     font-size: 13px;
 
     outline: none;
+
 }
 
 .search-box:focus {
+
     border-color: var(--green);
+
 }
+
 
 /* =========================================================
    FILTERS
 ========================================================= */
 
 .filters {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 
     margin-bottom: 30px;
+
 }
 
 .filter-btn {
+
     border: 1px solid var(--border);
+
     background: transparent;
 
-    padding: 9px 16px;
+    padding: 8px 15px;
 
     border-radius: 100px;
 
     font-family: var(--body);
-    font-size: 12px;
+
+    font-size: 11px;
 
     cursor: pointer;
 
     transition: .2s;
+
 }
 
 .filter-btn:hover {
+
     border-color: var(--green);
-    color: var(--green);
+
 }
 
 .filter-btn.active {
+
     background: var(--black);
+
     color: var(--white);
+
     border-color: var(--black);
+
 }
 
+
 /* =========================================================
-   CASE CARDS
+   CASE STUDY GRID
 ========================================================= */
 
 .case-grid {
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 18px;
+
 }
 
+
+/* =========================================================
+   CASE CARD
+========================================================= */
+
 .case-card {
-    position: relative;
-
-    min-height: 350px;
-
-    padding: 32px;
 
     border: 1px solid var(--border);
+
     border-radius: 12px;
+
+    padding: 30px;
 
     background: var(--white);
 
     display: flex;
+
     flex-direction: column;
 
-    transition: .25s;
+    min-height: 350px;
+
+    transition: .2s ease;
+
 }
 
 .case-card:hover {
-    transform: translateY(-5px);
 
-    border-color: rgba(29,158,117,.45);
+    border-color: rgba(29,158,117,.5);
 
-    box-shadow: 0 18px 40px rgba(0,0,0,.06);
+    transform: translateY(-3px);
+
 }
 
-.case-card.coming-soon {
-    opacity: .72;
+.case-card.scenario {
+
+    background: #eeeae3;
+
 }
 
-.case-type {
+.case-card h3 {
+
+    margin-top: 4px;
+
+    font-size: 26px;
+
+    line-height: 1.15;
+
+}
+
+.case-description {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-top: 14px;
+
+    max-width: 600px;
+
+}
+
+.case-footer {
+
+    margin-top: auto;
+
+    padding-top: 25px;
+
+}
+
+.case-status {
+
     display: inline-block;
 
     font-size: 10px;
-    font-weight: 700;
 
     text-transform: uppercase;
-    letter-spacing: .11em;
+
+    letter-spacing: .09em;
+
+    font-weight: 600;
 
     color: var(--green);
 
     margin-bottom: 14px;
-}
 
-.case-card h3 {
-    font-size: 28px;
-    line-height: 1.15;
-}
-
-.case-description {
-    color: var(--muted);
-
-    font-size: 14px;
-    line-height: 1.75;
-
-    margin-top: 15px;
-}
-
-.case-footer {
-    margin-top: auto;
-    padding-top: 25px;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
 
-    margin-bottom: 20px;
+    display: flex;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+
 }
 
 .tags span {
+
+    font-size: 10px;
+
     border: 1px solid var(--border);
 
     border-radius: 100px;
 
     padding: 5px 9px;
 
-    font-size: 9px;
-
     color: var(--muted);
+
 }
 
 .read-link {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
     font-size: 13px;
-    font-weight: 600;
+
+    font-weight: 500;
 
     text-decoration: none;
 
-    transition: .2s;
 }
 
 .read-link:hover {
+
     color: var(--green);
+
 }
 
-.coming-soon-label {
-    color: var(--muted);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.no-results {
-    display: none;
-
-    text-align: center;
-
-    padding: 50px 20px;
-
-    border: 1px dashed var(--border);
-    border-radius: 12px;
+.coming-link {
 
     color: var(--muted);
 
-    font-size: 14px;
+    cursor: default;
+
 }
 
-.hidden {
-    display: none !important;
-}
 
 /* =========================================================
-   THINKING FRAMEWORK
+   FRAMEWORK
 ========================================================= */
 
-.framework-section {
+.dark {
+
     background: var(--black);
+
     color: var(--white);
+
 }
 
-.framework-intro {
-    max-width: 700px;
-}
-
-.framework-intro h2 {
-    font-size: clamp(36px, 5vw, 60px);
-    line-height: 1.02;
-    letter-spacing: -.045em;
-}
-
-.framework-intro p {
-    margin-top: 20px;
+.dark .sub {
 
     color: rgba(255,255,255,.55);
 
-    font-size: 15px;
-    line-height: 1.8;
 }
 
 .framework-grid {
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: repeat(3,1fr);
 
     gap: 18px;
 
-    margin-top: 50px;
+    margin-top: 48px;
+
 }
 
 .framework-card {
-    padding: 28px;
+
+    padding: 30px;
 
     border: 1px solid rgba(255,255,255,.12);
+
     border-radius: 10px;
+
 }
 
-.framework-number {
+.num {
+
     font-family: var(--display);
 
-    font-size: 40px;
+    font-size: 42px;
+
+    color: rgba(29,158,117,.3);
+
     font-weight: 800;
 
-    color: rgba(29,158,117,.5);
+    margin-bottom: 22px;
 
-    margin-bottom: 18px;
-}
-
-.framework-card h3 {
-    font-size: 19px;
 }
 
 .framework-card p {
-    margin-top: 9px;
-
-    color: rgba(255,255,255,.48);
 
     font-size: 13px;
-    line-height: 1.65;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,.52);
+
+    margin-top: 10px;
+
 }
+
 
 /* =========================================================
    CTA
 ========================================================= */
 
 .cta {
+
     background: var(--green-dark);
+
     color: var(--white);
 
     text-align: center;
-}
 
-.cta .label {
-    color: rgba(255,255,255,.55);
 }
 
 .cta h2 {
+
     max-width: 780px;
 
-    margin: 0 auto;
+    margin: 0 auto 18px;
 
-    font-size: clamp(36px, 5vw, 60px);
-
-    line-height: 1.05;
-    letter-spacing: -.04em;
 }
 
 .cta p {
-    max-width: 620px;
 
-    margin: 20px auto 0;
+    max-width: 600px;
 
-    color: rgba(255,255,255,.62);
+    margin: auto;
 
-    font-size: 15px;
-    line-height: 1.8;
+    color: rgba(255,255,255,.65);
+
+    line-height: 1.7;
+
 }
 
 .cta .btn {
+
     margin-top: 30px;
 
     background: var(--white);
+
     color: var(--green-dark);
 
     font-family: var(--display);
+
     font-weight: 700;
+
 }
 
-.cta .btn:hover {
-    transform: translateY(-2px);
-}
 
 /* =========================================================
    FOOTER
 ========================================================= */
 
 footer {
+
     background: var(--black);
+
     color: rgba(255,255,255,.4);
 
-    padding: 45px 5%;
+    padding: 42px 5vw;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    gap: 25px;
+    gap: 20px;
 
-    font-size: 12px;
+    font-size: 13px;
+
 }
 
 .footer-brand {
+
     font-family: var(--display);
 
-    font-size: 18px;
     font-weight: 800;
 
     color: var(--white);
+
 }
 
 .footer-brand span {
+
     color: var(--green);
+
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    gap: 18px;
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
 }
 
 .footer-links a {
+
     text-decoration: none;
 
     color: rgba(255,255,255,.4);
 
-    transition: .2s;
 }
 
 .footer-links a:hover {
+
     color: var(--white);
+
 }
+
+
+/* =========================================================
+   SEARCH STATE
+========================================================= */
+
+.hidden {
+
+    display: none !important;
+
+}
+
+.no-results {
+
+    display: none;
+
+    padding: 40px;
+
+    border: 1px dashed var(--border);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
 
 /* =========================================================
    MOBILE
 ========================================================= */
 
-@media (max-width: 900px) {
+@media(max-width:900px) {
 
     .case-grid {
+
         grid-template-columns: 1fr;
+
     }
 
     .framework-grid {
+
         grid-template-columns: 1fr 1fr;
+
+    }
+
+    .nav-links {
+
+        gap: 14px;
+
+    }
+
+    .nav-links a {
+
+        font-size: 12px;
+
     }
 
 }
 
-@media (max-width: 700px) {
-
-    section {
-        padding: 75px 0;
-    }
+@media(max-width:700px) {
 
     nav {
-        padding: 17px 5%;
+
+        padding: 17px 5vw;
+
     }
 
     .nav-links {
+
         display: none;
+
+    }
+
+    section {
+
+        padding: 75px 5vw;
+
     }
 
     .hero {
-        padding-top: 125px;
-        min-height: 75vh;
+
+        min-height: 80vh;
+
+        padding-top: 130px;
+
     }
 
-    .hero h1 {
-        font-size: 50px;
+    .hero:before {
+
+        width: 65%;
+
     }
 
     .intro-grid {
+
         grid-template-columns: 1fr;
+
         gap: 30px;
+
     }
 
     .library-header {
+
         flex-direction: column;
+
         align-items: flex-start;
+
     }
 
     .search-box {
+
         width: 100%;
+
     }
 
     .framework-grid {
+
         grid-template-columns: 1fr;
+
     }
 
     footer {
+
         flex-direction: column;
+
         text-align: center;
+
+    }
+
+    .footer-links {
+
+        justify-content: center;
+
     }
 
 }
 
 </style>
+
 </head>
 
 
@@ -749,25 +1053,40 @@ footer {
 <nav>
 
 <a href="../index.html" class="logo">
+
 DT<span>.</span>
+
 </a>
+
 
 <div class="nav-links">
 
-<a href="../about/">About</a>
+<a href="../about/">
+About
+</a>
 
-<a href="../services/">Services</a>
+<a href="../services/">
+Services
+</a>
 
-<a href="../process/">Process</a>
+<a href="../process/">
+Process
+</a>
 
-<a href="./" class="active">Case Studies</a>
+<a href="./" class="active">
+Case Studies
+</a>
 
-<a href="../contact/">Let's Talk</a>
+<a href="../contact/">
+Let's Talk
+</a>
 
 <a
 href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
 class="nav-cta">
+
 Free Audit
+
 </a>
 
 </div>
@@ -776,16 +1095,19 @@ Free Audit
 
 
 <!-- =========================================================
-     HERO / WELCOME
+     HERO
 ========================================================= -->
 
 <section class="hero">
 
-<div class="container hero-content">
+<div class="container hero-copy">
+
 
 <div class="breadcrumb">
 
-<a href="../index.html">Home</a>
+<a href="../index.html">
+Home
+</a>
 
 <span>→</span>
 
@@ -793,43 +1115,57 @@ Case Studies
 
 </div>
 
+
 <div class="label">
-Case Studies &amp; Proof
+
+Operations & Systems Integrator
+
 </div>
+
 
 <h1>
 
-Systems thinking
+The proof is in
 <br>
 
-in <em>action.</em>
+the <em>system.</em>
 
 </h1>
 
-<p class="hero-description">
 
-Welcome to the Case Studies library.
+<p class="sub hero-description">
 
-This is where I break down business problems,
-systems challenges, workflow bottlenecks,
-automation opportunities, and operational
-transformation into practical solutions.
+This is where strategy meets execution.
+
+Explore practical case studies and strategic scenarios
+showing how fragmented operations, disconnected tools,
+manual workflows, and complex customer journeys can
+be turned into clearer, more scalable systems.
 
 </p>
 
-<div class="hero-actions">
 
-<a href="#library" class="btn btn-black">
-Explore the Case Studies ↓
+<div class="actions">
+
+<a
+href="#library"
+class="btn btn-black">
+
+Explore Case Studies →
+
 </a>
+
 
 <a
 href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
 class="btn btn-outline">
-Start a Free Audit
+
+Start With a Free Audit
+
 </a>
 
 </div>
+
 
 </div>
 
@@ -844,40 +1180,51 @@ Start a Free Audit
 
 <div class="container intro-grid">
 
+
 <div>
 
 <div class="label">
-What you'll find here
+
+How to read these
+
 </div>
 
+
 <h2>
-Don't just look at the tools.
+
+Don't just look at
+the tools.
+
 Look at the system.
+
 </h2>
 
 </div>
+
 
 <div>
 
 <div class="intro-statement">
 
-The goal isn't to showcase software.
-
-It's to show how business problems
-can be understood, structured, and
-solved through better systems.
+Tools are only useful when the
+business system around them works.
 
 </div>
 
-<p class="intro-text">
 
-Each case study looks at the relationship between
-business goals, people, processes, technology,
-data, customer journeys, and operational execution.
+<p class="sub intro-text">
+
+Every example looks beyond the software.
+
+We examine the business problem, people,
+processes, workflows, customer journey,
+technology, automation, and operational
+visibility.
 
 </p>
 
 </div>
+
 
 </div>
 
@@ -885,10 +1232,10 @@ data, customer journeys, and operational execution.
 
 
 <!-- =========================================================
-     CASE STUDY LIBRARY
+     LIBRARY
 ========================================================= -->
 
-<section class="library" id="library">
+<section id="library">
 
 <div class="container">
 
@@ -898,136 +1245,167 @@ data, customer journeys, and operational execution.
 <div>
 
 <div class="label">
+
 Case Study Library
+
 </div>
 
+
 <h2>
+
 Explore the work.
+
 </h2>
 
 </div>
+
 
 <input
 type="search"
 id="searchInput"
 class="search-box"
 placeholder="Search case studies..."
-aria-label="Search case studies">
+aria-label="Search case studies"
+>
 
 </div>
 
 
 <!-- =========================================================
-     FILTER BUTTONS
+     FILTERS
 ========================================================= -->
 
 <div class="filters">
 
+
 <button
 class="filter-btn active"
 data-filter="all">
+
 All
+
 </button>
+
 
 <button
 class="filter-btn"
 data-filter="operations">
+
 Operations
+
 </button>
 
-<button
-class="filter-btn"
-data-filter="workflow">
-Workflow
-</button>
 
 <button
 class="filter-btn"
 data-filter="automation">
+
 Automation
+
 </button>
+
 
 <button
 class="filter-btn"
 data-filter="crm">
+
 CRM / GHL
+
 </button>
+
 
 <button
 class="filter-btn"
 data-filter="systems">
+
 Systems
+
 </button>
+
 
 <button
 class="filter-btn"
 data-filter="marketing">
+
 Marketing Systems
+
 </button>
+
 
 </div>
 
 
 <!-- =========================================================
-     CASE STUDY CARDS
+     CASE STUDIES
 ========================================================= -->
 
 <div class="case-grid" id="caseGrid">
 
 
 <!-- =====================================================
-     EXISTING CASE STUDY
-     /case-studies/workflow-systems/
+     CASE STUDY 01
 ===================================================== -->
 
 <article
 class="case-card"
-data-category="operations workflow automation systems"
-data-search="workflow systems transformation operations workflow automation systems process">
+data-category="operations systems automation crm"
+data-search="multi brand business ecosystem transformation strategic assessment operations systems crm automation">
 
 <div>
 
-<div class="case-type">
-Systems &amp; Workflow
+
+<div class="case-status">
+
+Strategic Assessment
+
 </div>
 
+
 <h3>
-Workflow Systems Transformation
+
+Multi-Brand Business Ecosystem
+Transformation
+
 </h3>
+
 
 <p class="case-description">
 
-A systems-focused case study examining how
-business workflows can be structured, connected,
-and improved through better processes,
-automation, and technology.
+A systems-level assessment focused on organizing
+a growing multi-brand business ecosystem,
+connecting operations, CRM, workflows,
+automation, and visibility.
 
 </p>
+
+
+<div class="tags">
+
+<span>Operations</span>
+
+<span>Systems</span>
+
+<span>CRM</span>
+
+<span>Automation</span>
+
+</div>
+
 
 </div>
 
 
 <div class="case-footer">
 
-<div class="tags">
-
-<span>Systems</span>
-
-<span>Workflow</span>
-
-<span>Operations</span>
-
-<span>Automation</span>
-
-</div>
 
 <a
 href="./workflow-systems/"
 class="read-link">
 
-Read Case Study →
+View Case Study →
 
 </a>
+
 
 </div>
 
@@ -1035,36 +1413,111 @@ Read Case Study →
 
 
 <!-- =====================================================
-     FUTURE CASE STUDY
+     STRATEGIC SCENARIO 02
 ===================================================== -->
 
 <article
-class="case-card coming-soon"
-data-category="crm automation systems"
-data-search="crm gohighlevel customer journey automation pipeline systems">
+class="case-card scenario"
+data-category="systems automation operations"
+data-search="tools workflow systems strategic scenario automation operations disconnected tools manual processes">
 
 <div>
 
-<div class="case-type">
-Coming Soon
+
+<div class="case-status">
+
+Strategic Scenario
+
 </div>
 
+
 <h3>
-CRM &amp; Customer Journey Transformation
+
+The Tools Aren't the System.
+The Workflow Is.
+
 </h3>
+
 
 <p class="case-description">
 
-An upcoming case study exploring CRM architecture,
-pipeline design, customer journeys, automation,
-and GoHighLevel implementation.
+A scenario demonstrating how disconnected tools,
+manual processes, unclear ownership, and broken
+handoffs can be redesigned into a coherent
+operating workflow.
 
 </p>
+
+
+<div class="tags">
+
+<span>Systems</span>
+
+<span>Workflow</span>
+
+<span>Automation</span>
+
+<span>Operations</span>
+
+</div>
+
 
 </div>
 
 
 <div class="case-footer">
+
+
+<a
+href="./workflow-systems/"
+class="read-link">
+
+Explore Scenario →
+
+</a>
+
+
+</div>
+
+</article>
+
+
+<!-- =====================================================
+     STRATEGIC SCENARIO 03
+===================================================== -->
+
+<article
+class="case-card scenario"
+data-category="crm automation systems marketing"
+data-search="crm customer journey transformation gohighlevel ghl pipeline automation marketing systems">
+
+<div>
+
+
+<div class="case-status">
+
+Strategic Scenario
+
+</div>
+
+
+<h3>
+
+CRM & Customer Journey
+Transformation
+
+</h3>
+
+
+<p class="case-description">
+
+A practical scenario exploring CRM architecture,
+pipeline design, customer journeys, automation,
+forms, follow-up systems, and GoHighLevel
+implementation.
+
+</p>
+
 
 <div class="tags">
 
@@ -1078,9 +1531,87 @@ and GoHighLevel implementation.
 
 </div>
 
-<span class="coming-soon-label">
+
+</div>
+
+
+<div class="case-footer">
+
+
+<a
+href="#future-case-study"
+class="read-link coming-link">
+
+Scenario Coming Soon
+
+</a>
+
+
+</div>
+
+</article>
+
+
+<!-- =====================================================
+     FUTURE SLOT
+===================================================== -->
+
+<article
+class="case-card scenario"
+data-category="operations"
+data-search="operations transformation future case study">
+
+<div>
+
+
+<div class="case-status">
+
+Future Case Study
+
+</div>
+
+
+<h3>
+
+Operations Transformation
+
+</h3>
+
+
+<p class="case-description">
+
+An upcoming case study focused on operational
+structure, accountability, process design,
+management visibility, and scalable execution.
+
+</p>
+
+
+<div class="tags">
+
+<span>Operations</span>
+
+<span>Process</span>
+
+<span>Management</span>
+
+<span>Systems</span>
+
+</div>
+
+
+</div>
+
+
+<div class="case-footer">
+
+
+<span class="coming-link">
+
 Coming Soon
+
 </span>
+
 
 </div>
 
@@ -1090,13 +1621,11 @@ Coming Soon
 </div>
 
 
-<!-- NO RESULTS -->
-
 <div
-class="no-results"
-id="noResults">
+id="noResults"
+class="no-results">
 
-No case studies match your search or selected category.
+No case studies match your search.
 
 </div>
 
@@ -1107,32 +1636,41 @@ No case studies match your search or selected category.
 
 
 <!-- =========================================================
-     HOW THE CASE STUDIES ARE APPROACHED
+     THINKING FRAMEWORK
 ========================================================= -->
 
-<section class="framework-section">
+<section class="dark">
 
 <div class="container">
 
 
-<div class="framework-intro">
+<div>
 
 <div class="label">
+
 The Thinking Behind The Work
+
 </div>
 
+
 <h2>
+
 Every case starts with
 the business problem.
+
 </h2>
 
-<p>
+
+<p
+class="sub"
+style="margin-top:20px">
 
 The tools come later.
 
-The first job is understanding what the business
-is trying to accomplish, where the current system
-breaks down, and what needs to change.
+The first job is understanding what
+the business is trying to accomplish,
+where the current system breaks down,
+and what needs to change.
 
 </p>
 
@@ -1144,16 +1682,20 @@ breaks down, and what needs to change.
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 01
 </div>
 
 <h3>
+
 Business
+
 </h3>
 
 <p>
+
 What is the business trying to accomplish?
+
 </p>
 
 </div>
@@ -1161,16 +1703,20 @@ What is the business trying to accomplish?
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 02
 </div>
 
 <h3>
+
 People
+
 </h3>
 
 <p>
+
 Who owns the work and where are the handoffs?
+
 </p>
 
 </div>
@@ -1178,16 +1724,20 @@ Who owns the work and where are the handoffs?
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 03
 </div>
 
 <h3>
+
 Process
+
 </h3>
 
 <p>
+
 How does work actually move through the business?
+
 </p>
 
 </div>
@@ -1195,16 +1745,20 @@ How does work actually move through the business?
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 04
 </div>
 
 <h3>
+
 Technology
+
 </h3>
 
 <p>
+
 Which tools should support the process?
+
 </p>
 
 </div>
@@ -1212,16 +1766,20 @@ Which tools should support the process?
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 05
 </div>
 
 <h3>
+
 Data
+
 </h3>
 
 <p>
+
 What needs to be captured, measured, and reported?
+
 </p>
 
 </div>
@@ -1229,16 +1787,20 @@ What needs to be captured, measured, and reported?
 
 <div class="framework-card">
 
-<div class="framework-number">
+<div class="num">
 06
 </div>
 
 <h3>
+
 Customer
+
 </h3>
 
 <p>
+
 Where can the customer journey break down?
+
 </p>
 
 </div>
@@ -1252,30 +1814,39 @@ Where can the customer journey break down?
 
 
 <!-- =========================================================
-     FREE AUDIT CTA
+     CTA
 ========================================================= -->
 
 <section class="cta">
 
 <div class="container">
 
+
 <div class="label">
-See what's happening inside your business
+
+Find the gaps in your own business
+
 </div>
 
+
 <h2>
-Don't know where the system is breaking?
+
+Your business may not need
+another tool.
+
+It may need a better system.
+
 </h2>
+
 
 <p>
 
-You don't have to know whether the problem is
-your people, process, CRM, automation, or technology.
-
-Start with the audit and identify where the
-biggest opportunities are.
+Start with a free business audit and identify
+where your operations, workflows, technology,
+customer journey, or automation may be breaking down.
 
 </p>
+
 
 <a
 href="https://deejaytumamao.github.io/deejaytumamao.com-business-audit/"
@@ -1284,6 +1855,7 @@ class="btn">
 Start the Free Business Audit →
 
 </a>
+
 
 </div>
 
@@ -1296,14 +1868,19 @@ Start the Free Business Audit →
 
 <footer>
 
+
 <div>
 
 <div class="footer-brand">
+
 DT<span>.</span>
+
 </div>
 
 <div style="margin-top:5px;">
-Operations &amp; Systems Integrator
+
+Operations & Systems Integrator
+
 </div>
 
 </div>
@@ -1311,50 +1888,61 @@ Operations &amp; Systems Integrator
 
 <div class="footer-links">
 
+
 <a href="../index.html">
 Home
 </a>
+
 
 <a href="../about/">
 About
 </a>
 
+
 <a href="../services/">
 Services
 </a>
+
 
 <a href="../process/">
 Process
 </a>
 
+
 <a href="./">
 Case Studies
 </a>
+
 
 <a href="../contact/">
 Let's Talk
 </a>
 
+
 </div>
 
 
 <div>
+
 © 2026 Deejay Tumamao
+
 </div>
+
 
 </footer>
 
 
 <!-- =========================================================
-     SEARCH + FILTER FUNCTIONALITY
+     FILTER + SEARCH JAVASCRIPT
 ========================================================= -->
 
 <script>
 
+
 const filterButtons =
 document.querySelectorAll(".filter-btn");
 
-const caseCards =
+const cards =
 document.querySelectorAll(".case-card");
 
 const searchInput =
@@ -1367,25 +1955,34 @@ let currentFilter = "all";
 
 
 /* =========================================================
-   FILTER BUTTONS
+   FILTER BUTTON
 ========================================================= */
 
 filterButtons.forEach(button => {
 
-button.addEventListener("click", function() {
+
+button.addEventListener("click", () => {
+
 
 filterButtons.forEach(btn => {
+
 btn.classList.remove("active");
+
 });
 
-this.classList.add("active");
+
+button.classList.add("active");
+
 
 currentFilter =
-this.dataset.filter;
+button.dataset.filter;
 
-filterCases();
+
+filterCards();
+
 
 });
+
 
 });
 
@@ -1396,67 +1993,88 @@ filterCases();
 
 searchInput.addEventListener(
 "input",
-filterCases
+filterCards
 );
 
 
 /* =========================================================
-   FILTER FUNCTION
+   FILTER ENGINE
 ========================================================= */
 
-function filterCases() {
+function filterCards() {
+
 
 const searchTerm =
 searchInput.value
 .toLowerCase()
 .trim();
 
-let visibleCount = 0;
+
+let visibleCards = 0;
 
 
-caseCards.forEach(card => {
+cards.forEach(card => {
+
 
 const categories =
-card.dataset.category || "";
+card.dataset.category
+.toLowerCase();
 
-const searchableText =
-card.dataset.search || "";
+
+const searchable =
+card.dataset.search
+.toLowerCase();
+
 
 const categoryMatch =
 currentFilter === "all" ||
 categories.includes(currentFilter);
 
+
 const searchMatch =
 searchTerm === "" ||
-searchableText.includes(searchTerm);
+searchable.includes(searchTerm);
 
 
 if(categoryMatch && searchMatch) {
 
+
 card.classList.remove("hidden");
 
-visibleCount++;
+visibleCards++;
+
 
 } else {
 
+
 card.classList.add("hidden");
 
+
 }
+
 
 });
 
 
-if(visibleCount === 0) {
+if(visibleCards === 0) {
 
-noResults.style.display = "block";
+
+noResults.style.display =
+"block";
+
 
 } else {
 
-noResults.style.display = "none";
+
+noResults.style.display =
+"none";
+
 
 }
 
+
 }
+
 
 </script>
 
